@@ -8,6 +8,7 @@ import struct
 
 # Suppress hello from pygame so that stdout is clean
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
+os.environ['SDL_AUDIODRIVER'] = 'dsp'
 import pygame  # noqa
 
 # The time step of the simulation. 60Hz is chosen to work well on most displays that are 60Hz.
